@@ -16,26 +16,66 @@
         <div class="subContainer">
             <div class="perfilMascota">
                 <div class="perfilMascotaItem perfilMascota_vacunacion">
-                    
+                    <div class="left-item">
+                        <img src="img/vacunaIcono.png" alt="">
+                    </div>
+                    <div class="right-item">
+                        <h2>VACUNAS</h2>
+                    </div>
                 </div>
                 <div class="perfilMascotaItem perfilMascota_visitasVeterinario">
-
+                    <div class="left-item">
+                        <img src="img/visitaVeterinarioIcono.png" alt="">
+                    </div>
+                    <div class="right-item">
+                        <h2>VISITAS AL VETERINARIO</h2>
+                    </div>
                 </div>
                 <div class="perfilMascotaItem perfilMascota_cirugias">
-
+                    <div class="left-item">
+                        <img src="img/cirugiaIcono.png" alt="">
+                    </div>
+                    <div class="right-item">
+                        <h2>CIRUGIAS</h2>
+                    </div>
                 </div>
                 <div class="perfilMascotaItem perfilMascota_alergias">
-
+                    <div class="left-item">
+                        <img src="img/alergiaIcono.png" alt="">
+                    </div>
+                    <div class="right-item">
+                        <h2>ALERGIAS</h2>
+                    </div>
                 </div>
             </div>
             <div class="todoList">
-                
+                <h2>TO-DO LIST</h2>
+                <div class="todoList_main" id="todoList_main">
+                    <!-- <p id="void_listText">¡No hay tareas que hacer!</p> -->
+                    <div class="listElement">
+                        <input type="checkbox" class="checkbox">
+                        <p>Sacar a pasear al perro</p>
+                        
+                    </div>
+                </div>
+                <div class="todoList_bottom">
+                    <img src="img/agregarTodoListIcono.png" id="abrirModal">
+                </div>
             </div>
         </div>
         <!-- <p><a target="_blank" href="https://icons8.com/icon/16017/cat">Gato</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a></p> -->
         
     </div>
-    <div id="infoMascota"></div>
+    <div class="modal" id="modal">
+        <div class="modalWindow">
+            <h3>AGREGAR NUEVA TAREA</h3>
+
+            <label for="taskInput">Escribe tu tarea:</label>
+            <input type="text" id="taskInput" placeholder="Nueva tarea..."/>
+
+            <button id="agregarListElement">Agregar</button>
+        </div>
+    </div>
 
     <script src="logica/inicio.js"></script>
 </body>

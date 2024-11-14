@@ -43,5 +43,38 @@ function mostrarDatos(): void {
     }
 }
 
+document.getElementById("abrirModal")?.addEventListener('click', () => {
+    let modal = document.getElementById("modal");
+    if (modal) {
+        modal.style.display = "flex";
+        let text = (document.getElementById("taskInput") as HTMLInputElement);
+        if (text) {
+            text.value = "";
+        }
+    }
+}) 
+
+document.getElementById("agregarListElement")?.addEventListener('click', () => {
+    let text = (document.getElementById("taskInput") as HTMLInputElement).value;
+    if (text) {
+        let todoList_main = document.getElementById("todoList_main");
+        if (todoList_main) {
+            todoList_main.innerHTML = "";
+            todoList_main.insertAdjacentHTML("beforeend", 
+                `<div class="listElement">
+                    <input type="checkbox" class="checkbox">
+                    <p>${text}</p>
+                </div>`);
+            let modal = document.getElementById("modal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+}) 
+
+
+
+
 document.addEventListener('DOMContentLoaded', mostrarDatos);
 

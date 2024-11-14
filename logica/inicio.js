@@ -1,3 +1,4 @@
+var _a, _b;
 function obtenerMascota() {
     var mascotaData = localStorage.getItem("mascota");
     return mascotaData ? JSON.parse(mascotaData) : null;
@@ -44,4 +45,28 @@ function mostrarDatos() {
         console.log("No hay datos de mascota guardados.");
     }
 }
+(_a = document.getElementById("abrirModal")) === null || _a === void 0 ? void 0 : _a.addEventListener('click', function () {
+    var modal = document.getElementById("modal");
+    if (modal) {
+        modal.style.display = "flex";
+        var text = document.getElementById("taskInput");
+        if (text) {
+            text.value = "";
+        }
+    }
+});
+(_b = document.getElementById("agregarListElement")) === null || _b === void 0 ? void 0 : _b.addEventListener('click', function () {
+    var text = document.getElementById("taskInput").value;
+    if (text) {
+        var todoList_main = document.getElementById("todoList_main");
+        if (todoList_main) {
+            todoList_main.innerHTML = "";
+            todoList_main.insertAdjacentHTML("beforeend", "<div class=\"listElement\">\n                    <input type=\"checkbox\" class=\"checkbox\">\n                    <p>".concat(text, "</p>\n                </div>"));
+            var modal = document.getElementById("modal");
+            if (modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+});
 document.addEventListener('DOMContentLoaded', mostrarDatos);

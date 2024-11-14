@@ -24,7 +24,7 @@ body {
 .btn_container {
     width: 12rem;
     height: 3.4rem;
-    background-color: rgb(69, 97, 255);
+    background-color: #4561ff;
     border-radius: 20px;
     position: absolute;
     top: 75%; left: 50%;
