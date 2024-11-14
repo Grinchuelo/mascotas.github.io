@@ -86,12 +86,19 @@ h1 {
     display: flex;
     gap: 0.3rem;
     margin-bottom: 1rem;
+    position: relative;
 } 
 .listElement .checkbox {
     width: 2rem;
 }
 .listElement p {
     font-size: 1.1rem;
+}
+.listElement img {
+    position: absolute;
+    right: 2rem;
+    width: 2rem;
+    cursor: pointer;
 }
 .todoList_bottom {
     position: absolute;
@@ -113,6 +120,12 @@ h1 {
     background-color: #4e3e2c73;
     display: none;
     transition: .3s;
+}
+.modalWindow img {
+    width: 3rem;
+    position: absolute;
+    top: .5rem; right: .5rem;
+    cursor: pointer; 
 }
 .modalWindow {
     width: 60%;

@@ -54,17 +54,31 @@ document.getElementById("abrirModal")?.addEventListener('click', () => {
     }
 }) 
 
+document.getElementById("cerrarModal")?.addEventListener('click', () => {
+    let modal = document.getElementById("modal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+})
+
 document.getElementById("agregarListElement")?.addEventListener('click', () => {
     let text = (document.getElementById("taskInput") as HTMLInputElement).value;
     if (text) {
         let todoList_main = document.getElementById("todoList_main");
         if (todoList_main) {
-            todoList_main.innerHTML = "";
             todoList_main.insertAdjacentHTML("beforeend", 
                 `<div class="listElement">
                     <input type="checkbox" class="checkbox">
                     <p>${text}</p>
+                    <img src="img/eliminarTodoListIcono.png" class="eliminarTarea">
                 </div>`);
+            
+            let ultimaTarea = todoList_main.lastElementChild;
+            let btn_eliminar = ultimaTarea?.querySelector('.eliminarTarea');
+            btn_eliminar?.addEventListener('click', () => {
+                ultimaTarea?.remove();
+            })
+
             let modal = document.getElementById("modal");
             if (modal) {
                 modal.style.display = "none";
@@ -73,8 +87,11 @@ document.getElementById("agregarListElement")?.addEventListener('click', () => {
     }
 }) 
 
-
-
+document.querySelectorAll(".eliminarTarea").forEach(eliminar => {
+    eliminar.addEventListener('click', () => {
+        eliminar?.parentElement?.remove();
+    })
+});
 
 document.addEventListener('DOMContentLoaded', mostrarDatos);
 
