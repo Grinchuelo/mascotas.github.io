@@ -63,4 +63,16 @@ select {
 option {
     font-weight: 600;
 }
+.btnRegistrar {
+    width: 6rem;
+    height: 3rem;
+    background-color: #4561ff;
+    border: none;
+    border-radius: 1rem;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f8f1e5;
+    cursor: pointer;
+}
 
