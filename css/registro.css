@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/registroFondo.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.form_container {
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    right: 5%; top: 20%;
+
+    background-color: #DBA76D;
+    border-radius: 2rem;
+    border: 3px black solid;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+form label {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+form input, select {
+    width: 100%;
+    height: 2.2rem;
+    padding: 1rem;
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    background-color: #f8f1e5;
+}
+select {
+    padding: 0;
+}
+option {
+    font-weight: 600;
+}
+

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-image: url(../img/inicioFondo.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 65%;
+    height: 100%;
+    padding-top: 2rem;
+    border: solid; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.encabezado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    text-shadow: #dfb17e 3px 2px;
+    text-transform: uppercase;
+    font-family: "Knewave", system-ui;
+}
+
+.subContainer {
+    width: 100%;
+    border:solid;
+    display: flex;
+}
+.perfilMascota {
+    border: solid;
+    width: 40%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+}
+.perfilMascotaItem {
+    flex-grow: 1;
+    border: solid;
+}
+
+.todoList {
+    border: solid;
+    width: 60%;
+    height: 30rem;
+}

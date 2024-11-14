@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/indexFondo.png);
+    background-size: 100%;
+    position: relative;
+}
+
+.btn_container {
+    width: 12rem;
+    height: 3.4rem;
+    background-color: rgb(69, 97, 255);
+    border-radius: 20px;
+    position: absolute;
+    top: 75%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f8f1e5;
+    cursor: pointer;
+
+    animation: btnRegistrar 1s infinite ease;
+}
+
+@keyframes btnRegistrar {
+    0% {
+        top: 75%;
+    }
+    50% {
+        top: 73%;
+    }
+    100% {
+        top: 75%;
+    }
+}

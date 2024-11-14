@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Mascotas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form_container">
+            <form id="formularioMascota">
+                <label for="especie">ESPECIE</label>
+                <select name="especie" id="especie">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Pez">Pez</option>
+                    <option value="Hamster">Hámster</option>
+                    <option value="Conejo">Conejo</option>
+                    <option value="Pajaro">Pájaro</option>
+                    <option value="Tortuga">Tortuga</option>
+                    <option value="Serpiente">Serpiente</option>
+                    <option value="Lagarto">Lagarto</option>
+                </select>
+
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="edad">EDAD</label>
+                <input type="number" name="edad" id="edad">
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="logica/registro.js"></script>
+</body>
+</html>
